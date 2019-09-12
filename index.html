@@ -1,0 +1,89 @@
+<html>
+<head>
+<title>Lesson 2</title>
+<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+<body>
+
+
+<!-- 
+Task 1
+Եթե նախօրոք տրված փոփոխականը փոքր է 18 ից, ապա alert լինի `"Դուք անչափահաս եք " , եթե ոչ, ապա գրվի " Դուք հաջողությամբ մուտք գործեցիք " և տպվի կամայական նկար: -->
+
+<!-- <div id="div_img"><img id="img" style="width: 100px;"></div>
+
+<script>
+
+	var number_1 = 19;
+
+	function addImage() {
+		var imgElement = document.getElementById("img");
+		imgElement.setAttribute("src", "image.jpg");
+	}
+
+	if(number_1 < 18) {
+		alert("Դուք անչափահաս եք");
+	} else {
+		alert("Դուք հաջողությամբ մուտք գործեցիք");
+	    addImage();
+	}
+
+</script> -->
+
+
+
+
+ 
+
+<!-- Task 2
+Գրել երկու փոփոխականի ֆունկցիա,որը հաշվում է այդ փոփոխականների քառակուսիների գումարը և տպում արժեքը: -->
+
+<!-- <script>
+	var num_1 = 15
+	var num_2 = 21
+
+function sqrt(){
+	var t1 = num_1*num_1
+	var t2 = num_2*num_2
+	var sum = t1+t2
+	return sum;
+}
+
+alert(sqrt());
+</script> -->
+
+
+
+<!-- Task 3
+    Հաշվել տրված եռանիշ թվի թվանշանների գումարը: -->
+
+
+	<input type="text" id="inp_number"> 
+	<button id="but_sum" onclick="calc()">SUM</button>
+
+	<script>
+
+		function sumNumbers(numbersArray) {
+
+			var i, sum = 0, splitedArrayLength = numbersArray.length;
+
+			for (i = 0; i < splitedArrayLength; i++) {
+		        sum += Number(numbersArray[i]);
+		    }
+
+		    return sum;
+		}
+
+
+		function calc() {
+			var innerNumber = document.getElementById("inp_number").value;
+			var splitedArr = innerNumber.split("");
+
+			console.log(sumNumbers(splitedArr));
+		}
+
+	</script>
+</body>
+
+</html>
